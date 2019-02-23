@@ -16,9 +16,9 @@ dateunf = datetime.date.today()
 datef = dateunf.strftime('%d-%m-%Y')
 # datef = '10-02-2019'
 cnf = mysql.connector.connect(host='localhost',
-                            database='zuluDB',
-                            user='wwaweru',
-                            password='guns&r0ses')
+                            database='',
+                            user='',
+                            password='')
 foretable = 'crawler'
 
 
@@ -148,7 +148,7 @@ def zulubet():
 # def send_email():
 #     server = smtplib.SMTP('smtp.gmail.com', 587)
 #     server.starttls()
-#     server.login("atypical.waweru@gmail.com","guns&r0ses")
+#     server.login("atypical.waweru@gmail.com","")
 #     server.sendmail()
 def turboscore():
     source='turbo'
@@ -259,7 +259,7 @@ def verifytip():
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login("atypical.waweru@gmail.com","guns&r0ses")
+        server.login("atypical.waweru@gmail.com","")
         cursor.execute("SELECT * FROM zuluDB.crawler where ftip<>'' and ztip<>''")
         #  and ttip<>''")
         recordset = cursor.fetchall()
